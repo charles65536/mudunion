@@ -2,50 +2,242 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MudUnion</title>
-    <style>@import "/static/css/CSS.css";
-    @import "/static/css/internetTopBar.css";</style>
-    <style type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+    <style>@import "/static/css/styles.css";
+    @import "/static/css/apple.css";
+    @import "/static/css/home_font.css";
     </style>
+
+    <title>MudUnion</title>
 </head>
 <body>
-<div class="page">
-    <div class="top">
-        <center>
-            <ul>
-                <li><a href="{% url 'home' %}"><img src="/static/pics/logo_white_transparent.png" height="25"></a></li>
-                <li><a href="{% url 'bread' %}">BreadMud</a></li>
-                <li><a href="#">EggMud</a></li>
-                <li><a href="#">Jvav</a></li>
-                <li><a href="#">MudSERVER</a></li>
-                <li><a href="#">∃E∈OS</a></li>
-                <li><a href="#">M-Chemistry</a></li>
-                <li><a href="{% url 'pupil' %}">PupilCorp</a></li>
-                <li><a href="#">Muddy Daily</a></li>
-                <li>
-                    <a href="#">Support</a>
-                    <ul>
-                        <li><a href="#">二级菜单</a></li>
-                        <li><a href="#">二级菜单</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </center>
-    </div>
-    <div class="topBlank" style="height: 90px"></div>
-    <div class="t1">
-        <center>
-            <b style="font-size: 110px; text-align: center; ">BreadMud THIRTEEN</b>
-            <p style="font-size: 70px; margin-top: 0px">E E E.</p>
-            <div style="margin-top: 40px">
-                <a style="margin-right: 80px;">Learn more ></a>
-                <a>Buy ></a>
+    <header>
+        <input type="checkbox" id="burger-shower" class="burger-shower">
+        <div class="header-navigation">
+            <div class="logo-container">
+                <a href="http://" rel="noopener noreferrer"></a><i class="fa fa-apple"></i>
             </div>
-            <img align="middle" src="/static/pics/5BMs.png" style="margin-top: 60px">
-        </center>
+            <label for="burger-shower" class="hamburger"></label>
+            <div class="nav-full">
+                <div class="nav-search-container">
+                    <div class="nav-search">
+                        <div class="icon-search"><i class="fa fa-search"></i></div>
+                        <input class="nav-search-input" type="text" placeholder="Search in MudUnion">
+                    </div>
+                </div>
+                <nav class="navigation">
+                    <ul class="navigation-list">
+                        <li>BreadMud</li>
+                        <li>EggMud</li>
+                        <li>Jvav</li>
+                        <li>MudSERVER</li>
+                        <li>EEEOS</li>
+                        <li>M-Chemistry</li>
+                        <li><a href="{% url 'pupil' %}">PupilCorp</a></li>
+                        <li>EA</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="second-logo-container">
+                <a href="http://" rel="noopener noreferrer"></a><i class="fa fa-search"></i>
+            </div>
+
+        </div>
+    </header>
+    <section class="first-content content principal">
+        <h2 class="main-title">BreadMud THIRTEEN</h2>
+        <h3 class="sub-title">E E E.</h3>
+        <p class="paragraph aviable"><span>Start at €514</span></p>
+        <a class="more-information" href="#">More Info >
+            <!--<i class="fa fa-angle-right"></i>--></a>
+        <div class="first-image ">
+            <!--
+            <img src="https://www.apple.com.cn/v/home/i/images/heroes/iphone-se/hero__dvsxv8smkkgi_small_2x.jpg" alt="mobile-phone">
+            -->
+            <img src="/static/pics/5BMs.png">
+        </div>
+    </section>
+    <section class="second-content content principal">
+        <h2 class="second-main-title main-title">BreadMud 12 Pro Max S Blend Plus X Ultra Super Supreme Extreme Platinum Edition</h2>
+        <h3 class="second-sub-title sub-title" style="color: white">the name is so long that we can't write anything here</h3>
+        <a class="more-information" href="#">More Info ></a>
+        <div class="image-container">
+            <!--
+            <img src="https://www.apple.com.cn/v/home/i/images/heroes/iphone-11-spring/hero__dvsxv8smkkgi_small_2x.jpg" alt="mobile-phone">
+            -->
+            <img src="/static/pics/5BMs.png">
+        </div>
+    </section>
+    <section class="thrid-content content principal">
+        <h2 class="third-main-title main-title">MudSERVER Pro</h2>
+        <h3 class="third-sub-title sub-title">Server 4 hacking.</h3>
+        <a class="more-information" href="#">More Info > <i class="fa fa-angle-right"></i></a>
+    </section>
+    <!--
+    <div class="list-content">
+        <div class="first-list-item list-item">
+            <section class="content">
+                <h2 class="second-main-title main-title"><i class="fa fa-apple"></i>iPhone + <i class="fa fa-apple"></i>WATCH</h2>
+                <h3 class="second-sub-title sub-title">Una suma que multiplica tus posibilidades.</h3>
+                <a class="more-information" href="#">Más Información <i class="fa fa-angle-right"></i></a>
+            </section>
+        </div>
+        <div class="second-list-item list-item">
+            <section class="content">
+                <h2 class="second-main-title main-title"> <i class="fa fa-apple"></i>WATCH </h2>
+                <span class="second-span-title">SERIES 5</span>
+                <h3 class="second-sub-title sub-title">Con una pantalla Retina que está siempre activa. Un reloj como nunca antes viste.</h3>
+                <a class="more-information" href="#">Más Información <i class="fa fa-angle-right"></i></a>
+            </section>
+        </div>
+        <div class="third-list-item list-item">
+            <section class="content">
+                <h2 class="third-main-title main-title">AirPods Pro</h2>
+                <h3 class="third-sub-title sub-title">Sonido realmente mágico.</h3>
+                <a class="more-information" href="#">Más Información <i class="fa fa-angle-right"></i></a>
+            </section>
+        </div>
+        <div class="four-list-item list-item">
+            <section class="content">
+                <h2 class="four-main-title main-title"><i class="fa fa-apple"></i>tv+</h2>
+                <h3 class="four-sub-title sub-title">Obtén un año gratis de Apple TV+ al comprar un dispositivo Apple.</h3>
+                <div class="four-links-container">
+                    <a class="more-information" href="#">Más Información <i class="fa fa-angle-right"></i></a>
+                    <a class="more-information" href="#">Prueba gratis <i class="fa fa-angle-right"></i></a>
+                </div>
+            </section>
+        </div>
     </div>
-</div>
+    -->
+    <footer>
+        <div class="footer-content">
+            <!--
+            <section class="footer-main-text">
+                <p class="footer-first-text">El Magic Keyboard se vende por separado.</p>
+                <p>Apple TV+ cuesta $4.99 al mes al finalizar el periodo de prueba gratis. Una suscripción por grupo de Compartir en Familia. Promoción válida durante 3 meses después de la activación de un dispositivo elegible. El plan se renovará automáticamente hasta que se cancele. Sujeto a restricciones y otros términos. Los precios están expresados en dólares estadounidenses y pueden variar por país. Se requiere una tarjeta de crédito internacional para completar la suscripción.</p>
+            </section>
+            -->
+            <nav class="footer-nav">
+                <div>
+                    <input type="checkbox" class="discover-shower" id="discover">
+                    <div class="column-section">
+                        <label for="discover">
+                            <h3 class="label-title">Shop & Learn</h3>
+                        </label>
+                        <ul class="order-list">
+                            <li class="discover-list">BreadMud</li>
+                            <li class="discover-list">EggMud</li>
+                            <li class="discover-list">Jvav</li>
+                            <li class="discover-list">MudSERVER</li>
+                            <li class="discover-list">M-Chemistry</li>
+                            <li class="discover-list">PupilCorp</li>
+                            <li class="discover-list">EA</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <input type="checkbox" class="discover-shower" id="services">
+                        <div class="column-section">
+                            <label for="services">
+                                <h3 class="label-title">Services</h3>
+                            </label>
+                            <ul class="order-list">
+                                <li class="discover-list">EEE Cloud Music (Mudify)</li>
+                                <li class="discover-list">Mud TV+</li>
+                                <li class="discover-list">Mud Arcade</li>
+                                <li class="discover-list">MudBook</li>
+                                <li class="discover-list">MudCloud</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="discover-shower" id="account">
+                        <div class="column-section">
+                            <label for="account">
+                                <h3 class="label-title">Account</h3>
+                            </label>
+                            <ul class="order-list">
+                                <li class="discover-list">Manage Your MudID</li>
+                                <li class="discover-list">czd.top</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div>
+                    <input type="checkbox" class="discover-shower" id="company">
+                    <div class="column-section">
+                        <label for="company">
+                            <h3 class="label-title">Para la Empresa</h3>
+                        </label>
+                        <ul class="order-list">
+                            <li class="discover-list">Apple y la Empresa</li>
+                        </ul>
+                    </div>
+                </div>
+                -->
+                <div>
+                    <div>
+                        <input type="checkbox" class="discover-shower" id="values">
+                        <div class="column-section">
+                            <label for="values">
+                                <h3 class="label-title">MudUnion Values</h3>
+                            </label>
+                            <ul class="order-list">
+                                <li class="discover-list">Accessibility</li>
+                                <li class="discover-list">Educationless</li>
+                                <li class="discover-list">ECOFRIENDLY</li>
+                                <li class="discover-list">Exclusion & Indiversity</li>
+                                <li class="discover-list">Big Brother</li>
+                                <li class="discover-list">I can't breath</li>
+                                <li class="discover-list">Supplier Irresponsibility</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="discover-shower" id="about">
+                        <div class="column-section">
+                            <label for="about">
+                                <h3 class="label-title">About MudUnion</h3>
+                            </label>
+                            <ul class="order-list">
+                                <li class="discover-list">Newsroom</li>
+                                <li class="discover-list">MudUnion Leadership</li>
+                                <li class="discover-list">EmployEE Muds</li>
+                                <li class="discover-list">Inmudors</li>
+                                <li class="discover-list">Events</li>
+                                <li class="discover-list">Contact MudUnion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <section class="footer-legal-terms">
+                <!--
+                <div class="distributor">
+                    <a href="">Busca un distribuidor </a>cerca de ti.
+                </div>
+                -->
+                <div class="flex-row-reverse">
+                    <div class="fa-euro">
+                        <a href=""><i class="fa fa-apple">France</i></a>
+                    </div>
+                    <div class="legal-terms">
+                        <div class="Copyright">Copyright © 2042
+                            MudUnion. All Muds Reserved</div>
+                        <div class="terms-list">
+                            <a href="">Inprivacy Policy</a>
+                            <a href="">Terms of Use</a>
+                            <a href="">RNM! Refund!</a>
+                            <a href="">Illegal</a>
+                            <a href="">Real Address</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
 </body>
 </html>
